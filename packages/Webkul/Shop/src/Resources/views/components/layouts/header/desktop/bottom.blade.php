@@ -26,17 +26,22 @@
         <v-desktop-category>
             <div class="flex items-center gap-5">
                 <span
-                    class="shimmer h-6 w-20 rounded"
+                    class="bg-loreLightYellow h-4 w-20 rounded"
                     role="presentation"
                 ></span>
 
                 <span
-                    class="shimmer h-6 w-20 rounded"
+                    class="bg-loreLightYellow h-4 w-20 rounded"
                     role="presentation"
                 ></span>
 
                 <span
-                    class="shimmer h-6 w-20 rounded"
+                    class="bg-loreLightYellow h-4 w-20 rounded"
+                    role="presentation"
+                ></span>
+
+                <span
+                    class="bg-loreLightYellow h-4 w-20 rounded"
                     role="presentation"
                 ></span>
             </div>
@@ -257,17 +262,22 @@
             v-if="isLoading"
         >
             <span
-                class="shimmer h-6 w-20 rounded"
+                class="bg-loreLightYellow h-4 w-20 rounded"
                 role="presentation"
             ></span>
 
             <span
-                class="shimmer h-6 w-20 rounded"
+                class="bg-loreLightYellow h-4 w-20 rounded"
                 role="presentation"
             ></span>
 
             <span
-                class="shimmer h-6 w-20 rounded"
+                class="bg-loreLightYellow h-4 w-20 rounded"
+                role="presentation"
+            ></span>
+
+            <span
+                class="bg-loreLightYellow h-4 w-20 rounded"
                 role="presentation"
             ></span>
         </div>
@@ -276,6 +286,13 @@
             class="flex items-center"
             v-else
         >
+
+            <div class="group relative flex h-[77px] items-center border-b-4 border-transparent hover:border-b-4 hover:border-loreGreen cursor-pointer">
+                <span>
+                    <a href="/" class="inline-block px-5 uppercase text-gray-600 font-semibold">Home</a>
+                </span>
+            </div>
+
             <div
                 class="group relative flex h-[77px] items-center border-b-4 border-transparent hover:border-b-4 hover:border-loreGreen cursor-pointer"
                 v-for="category in categories"
