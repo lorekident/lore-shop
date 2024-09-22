@@ -15,10 +15,10 @@ Homestead.yaml
 /node_modules
 npm-debug.log
 package-lock.json
-/public/css 
+/public/css
 /public/js
 /public/hot
-/public/storage
+#/public/storage
 /public/vendor
 /lang/vendor
 /storage/*.key
