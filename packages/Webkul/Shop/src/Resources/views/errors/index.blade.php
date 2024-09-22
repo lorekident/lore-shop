@@ -9,7 +9,7 @@
     </x-slot>
 
     <!-- cursor movement canvas line -->
-    <canvas 
+    <canvas
         resize="true"
         id="canvas-wd"
     >
@@ -33,17 +33,17 @@
                     </h1>
 
 					<p class="mt-4 text-lg text-zinc-500">
-                        {{ 
+                        {{
                             $errorCode === 503 && core()->getCurrentChannel()->maintenance_mode_text != ""
                             ? core()->getCurrentChannel()->maintenance_mode_text : trans("admin::app.errors.{$errorCode}.description")
                         }}
                     </p>
 
-					<a 
+					<a
                         href="{{ route('shop.home.index') }}"
-						class="m-auto mt-8 block w-max cursor-pointer rounded-[45px] bg-navyBlue px-10 py-4 text-center text-base font-medium text-white max-sm:mb-10 max-sm:px-6 max-sm:text-sm"
+						class="m-auto mt-8 block w-max cursor-pointer rounded-[45px] bg-loreGreen px-10 py-4 text-center text-base font-medium text-white max-sm:mb-10 max-sm:px-6 max-sm:text-sm"
                     >
-						@lang('shop::app.errors.go-to-home') 
+						@lang('shop::app.errors.go-to-home')
                     </a>
 				</div>
 			</div>
@@ -54,17 +54,17 @@
         <script type="text/paperscript" canvas="canvas-wd">
             var points = 30;
             var length = 30;
-        
+
             var path = new Path({
                 strokeColor: '#060C3B',
                 strokeWidth: 10,
                 strokeCap: 'round'
             });
-        
+
             var start = view.center / [10, 1];
             for (var i = 0; i < points; i++)
                 path.add(start + new Point(i * length, 0));
-        
+
             function onMouseMove(event) {
                 path.firstSegment.point = event.point;
                 for (var i = 0; i < points - 1; i++) {

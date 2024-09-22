@@ -184,7 +184,7 @@
                             />
 
                             <label
-                                class="icon-uncheck peer-checked:icon-check-box cursor-pointer text-2xl text-navyBlue peer-checked:text-navyBlue max-sm:text-xl"
+                                class="icon-uncheck peer-checked:icon-check-box cursor-pointer text-2xl text-loreGreen peer-checked:text-loreGreen max-sm:text-xl"
                                 for="is-subscribed"
                             ></label>
 
@@ -220,7 +220,7 @@
 			<p class="mt-5 font-medium text-zinc-500 max-sm:text-center max-sm:text-sm">
                 @lang('shop::app.customers.signup-form.account-exists')
 
-                <a class="text-navyBlue"
+                <a class="text-loreGreen"
                     href="{{ route('shop.customer.session.index') }}"
                 >
                     @lang('shop::app.customers.signup-form.sign-in-button')

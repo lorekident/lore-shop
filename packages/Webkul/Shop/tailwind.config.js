@@ -1,20 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ["./src/Resources/**/*.blade.php", "./src/Resources/**/*.js"],
-
     theme: {
         container: {
             center: true,
-
             screens: {
                 "2xl": "1440px",
             },
-
             padding: {
                 DEFAULT: "90px",
             },
         },
-
         screens: {
             sm: "525px",
             md: "768px",
@@ -26,25 +22,18 @@ module.exports = {
             991: "991px",
             868: "868px",
         },
-
         extend: {
             colors: {
-                navyBlue: "#060C3B",
-                lightOrange: "#F6F2EB",
-                darkGreen: '#40994A',
-                darkBlue: '#0044F2',
-                darkPink: '#F85156',
+                loreGreen: "#32B440",
+                loreYellow: "#faef06",
+                loreLightYellow: "#fffba6",
             },
-
             fontFamily: {
-                poppins: ["Poppins"],
-                dmserif: ["DM Serif Display"],
+                poppins: ["Poppins"]
             },
         }
     },
-
     plugins: [],
-
     safelist: [
         {
             pattern: /icon-/,

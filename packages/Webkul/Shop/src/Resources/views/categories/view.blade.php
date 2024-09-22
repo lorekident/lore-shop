@@ -1,12 +1,12 @@
 <!-- SEO Meta Content -->
 @push('meta')
-    <meta 
-        name="description" 
+    <meta
+        name="description"
         content="{{ trim($category->meta_description) != "" ? $category->meta_description : \Illuminate\Support\Str::limit(strip_tags($category->description), 120, '') }}"
     />
 
-    <meta 
-        name="keywords" 
+    <meta
+        name="keywords"
         content="{{ $category->meta_keywords }}"
     />
 
@@ -51,7 +51,7 @@
             </div>
         @endif
     @endif
-        
+
     {!! view_render_event('bagisto.shop.categories.view.description.after') !!}
 
     @if (in_array($category->display_mode, [null, 'products_only', 'products_and_description']))
@@ -63,8 +63,8 @@
     @endif
 
     @pushOnce('scripts')
-        <script 
-            type="text/x-template" 
+        <script
+            type="text/x-template"
             id="v-category-template"
         >
             <div class="container px-[60px] max-lg:px-8 max-md:px-4">
@@ -108,7 +108,7 @@
                                             src="{{ bagisto_asset('images/thank-you.png') }}"
                                             alt="@lang('shop::app.categories.view.empty')"
                                         />
-                                  
+
                                         <p
                                             class="text-xl max-md:text-sm"
                                             role="heading"
@@ -152,7 +152,7 @@
                                             src="{{ bagisto_asset('images/thank-you.png') }}"
                                             alt="@lang('shop::app.categories.view.empty')"
                                         />
-                                        
+
                                         <p
                                             class="text-xl max-md:text-sm"
                                             role="heading"
@@ -183,7 +183,7 @@
                         >
                             <!-- Spinner -->
                             <img
-                                class="h-5 w-5 animate-spin text-navyBlue"
+                                class="h-5 w-5 animate-spin text-loreGreen"
                                 src="{{ bagisto_asset('images/spinner.svg') }}"
                                 alt="Loading"
                             />
@@ -207,13 +207,13 @@
 
                         isDrawerActive: {
                             toolbar: false,
-                            
+
                             filter: false,
                         },
 
                         filters: {
                             toolbar: {},
-                            
+
                             filter: {},
                         },
 
@@ -259,14 +259,14 @@
                     getProducts() {
                         this.isDrawerActive = {
                             toolbar: false,
-                            
+
                             filter: false,
                         };
 
                         document.body.style.overflow ='scroll';
 
                         this.$axios.get("{{ route('shop.api.products.index', ['category_id' => $category->id]) }}", {
-                            params: this.queryParams 
+                            params: this.queryParams
                         })
                             .then(response => {
                                 this.isLoading = false;

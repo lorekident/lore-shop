@@ -30,7 +30,7 @@
 
                         @if (core()->getConfigData('sales.checkout.my_cart.summary') == 'display_item_quantity')
                             <span
-                                class="absolute -top-4 rounded-[44px] bg-navyBlue px-2 py-1.5 text-xs font-semibold leading-[9px] text-white max-md:px-2 max-md:py-1.5 ltr:left-5 max-md:ltr:left-4 rtl:right-5 max-md:rtl:right-4"
+                                class="absolute -top-4 rounded-[44px] bg-loreGreen px-2 py-1.5 text-xs font-semibold leading-[9px] text-white max-md:px-2 max-md:py-1.5 ltr:left-5 max-md:ltr:left-4 rtl:right-5 max-md:rtl:right-4"
                                 v-if="cart?.items_count"
                             >
                                 @{{ cart.items_count }}
@@ -38,7 +38,7 @@
 
                         @else
                             <span
-                                class="absolute -top-4 rounded-[44px] bg-navyBlue px-2 py-1.5 text-xs font-semibold leading-[9px] text-white ltr:left-5 max-md:ltr:left-4 rtl:right-5 max-md:rtl:right-4"
+                                class="absolute -top-4 rounded-[44px] bg-loreGreen px-2 py-1.5 text-xs font-semibold leading-[9px] text-white ltr:left-5 max-md:ltr:left-4 rtl:right-5 max-md:rtl:right-4"
                                 v-if="cart?.items_qty"
                             >
                                 @{{ cart.items_qty }}
@@ -71,12 +71,12 @@
                     {!! view_render_event('bagisto.shop.checkout.mini-cart.drawer.content.before') !!}
 
                     <!-- Cart Item Listing -->
-                    <div 
-                        class="mt-9 grid gap-12 max-md:mt-2.5 max-md:gap-5" 
+                    <div
+                        class="mt-9 grid gap-12 max-md:mt-2.5 max-md:gap-5"
                         v-if="cart?.items?.length"
                     >
-                        <div 
-                            class="flex gap-x-5 max-md:gap-x-4" 
+                        <div
+                            class="flex gap-x-5 max-md:gap-x-4"
                             v-for="item in cart?.items"
                         >
                             <!-- Cart Item Image -->
@@ -172,7 +172,7 @@
                                                 <p class="text-sm font-medium text-zinc-500 max-md:font-normal max-sm:text-xs">
                                                     @{{ option.attribute_name + ':' }}
                                                 </p>
-        
+
                                                 <p class="text-sm max-sm:text-xs">
                                                     @{{ option.option_label }}
                                                 </p>
@@ -197,7 +197,7 @@
                                     {!! view_render_event('bagisto.shop.checkout.mini-cart.drawer.content.quantity_changer.after') !!}
 
                                 {!! view_render_event('bagisto.shop.checkout.mini-cart.drawer.content.remove_button.before') !!}
-                                
+
                                 <!-- Cart Item Remove Button -->
                                 <button
                                     type="button"
@@ -252,7 +252,7 @@
                             <p class="text-sm font-medium text-zinc-500">
                                 @lang('shop::app.checkout.cart.mini-cart.subtotal')
                             </p>
-                        
+
                         <template v-if="displayTax.subtotal == 'including_tax'">
                             <p class="text-3xl font-semibold max-md:text-base">
                                 @{{ cart.formatted_sub_total_incl_tax }}
@@ -262,10 +262,10 @@
                         <template v-else-if="displayTax.subtotal == 'both'">
                             <p class="flex flex-col text-3xl font-semibold max-md:text-sm max-sm:text-right">
                                 @{{ cart.formatted_sub_total_incl_tax }}
-                                
+
                                 <span class="text-sm font-normal text-zinc-500 max-sm:text-xs">
                                     @lang('shop::app.checkout.cart.mini-cart.excl-tax')
-                                    
+
                                     <span class="font-medium text-black">@{{ cart.formatted_sub_total }}</span>
                                 </span>
                             </p>
@@ -295,7 +295,7 @@
                                     stroke="currentColor"
                                     stroke-width="4"
                                 ></circle>
-                
+
                                 <path
                                     class="opacity-75"
                                     fill="currentColor"
@@ -315,7 +315,7 @@
 
                         <a
                             href="{{ route('shop.checkout.onepage.index') }}"
-                            class="mx-auto block w-full cursor-pointer rounded-2xl bg-navyBlue px-11 py-4 text-center text-base font-medium text-white max-md:rounded-lg max-md:px-5 max-md:py-2"
+                            class="mx-auto block w-full cursor-pointer rounded-2xl bg-loreGreen px-11 py-4 text-center text-base font-medium text-white max-md:rounded-lg max-md:px-5 max-md:py-2"
                         >
                             @lang('shop::app.checkout.cart.mini-cart.continue-to-checkout')
                         </a>
@@ -347,7 +347,7 @@
                         ></span>
 
                         <span
-                            class="absolute -top-4 rounded-[44px] bg-navyBlue px-2 py-1.5 text-xs font-semibold leading-[9px] text-white max-md:px-2 max-md:py-1.5 ltr:left-5 max-md:ltr:left-4 rtl:right-5 max-md:rtl:right-4"
+                            class="absolute -top-4 rounded-[44px] bg-loreGreen px-2 py-1.5 text-xs font-semibold leading-[9px] text-white max-md:px-2 max-md:py-1.5 ltr:left-5 max-md:ltr:left-4 rtl:right-5 max-md:rtl:right-4"
                             v-if="cart?.items_qty"
                         >
                             @{{ cart.items_qty }}
@@ -432,7 +432,7 @@
                                 this.cart = response.data.data;
 
                                 this.$emitter.emit('add-flash', { type: 'success', message: response.data.message });
-                                
+
                                 this.isLoading = false;
                             })
                             .catch(error => {

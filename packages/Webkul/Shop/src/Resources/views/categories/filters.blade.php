@@ -192,7 +192,7 @@
                                 />
 
                                 <label
-                                    class="icon-uncheck peer-checked:icon-check-box cursor-pointer text-2xl text-navyBlue peer-checked:text-navyBlue max-sm:text-xl"
+                                    class="icon-uncheck peer-checked:icon-check-box cursor-pointer text-2xl text-loreGreen peer-checked:text-loreGreen max-sm:text-xl"
                                     role="checkbox"
                                     aria-checked="false"
                                     :aria-label="option.name"
@@ -267,7 +267,7 @@
             methods: {
                 getFilters() {
                     this.$axios.get('{{ route("shop.api.categories.attributes") }}', {
-                            params: { 
+                            params: {
                                 category_id: "{{ isset($category) ? $category->id : ''  }}",
                             }
                         })
