@@ -39,6 +39,7 @@ module.exports = {
             pattern: /icon-/,
         },
         'origin-bottom-right',
+        'primary-button-lg',
         'rotate-[10deg]',
         'md:grid-cols-2',
         'text-justify',
