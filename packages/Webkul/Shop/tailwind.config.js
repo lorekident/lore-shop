@@ -41,6 +41,7 @@ module.exports = {
         'origin-bottom-right',
         'rotate-[10deg]',
         'md:grid-cols-2',
+        'text-justify',
         'md:text-base',
         'md:text-6xl',
         'md:px-12',
