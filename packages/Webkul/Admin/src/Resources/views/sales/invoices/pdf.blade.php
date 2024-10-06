@@ -113,7 +113,7 @@
             }
 
             .page-header {
-                border-bottom: 1px solid #dddddd;
+                border-bottom: 1px solid #f1f1f1;
                 text-align: center;
                 font-size: 24px;
                 text-transform: uppercase;
@@ -155,7 +155,7 @@
             }
 
             table thead th {
-                background-color: #dddddd;
+                background-color: #f1f1f1;
                 color: #32b440;
                 padding: 6px 18px;
                 text-align: left;
@@ -167,7 +167,7 @@
 
             table tbody td {
                 padding: 9px 18px;
-                border-bottom: 1px solid #dddddd;
+                border-bottom: 1px solid #f1f1f1;
                 text-align: left;
                 vertical-align: top;
             }
@@ -186,7 +186,7 @@
                 width: 250px;
                 padding-top: 5px;
                 padding-bottom: 5px;
-                background-color: #dddddd;
+                background-color: #f1f1f1;
                 white-space: nowrap;
             }
 
