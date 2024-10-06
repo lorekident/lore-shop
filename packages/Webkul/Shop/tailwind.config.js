@@ -37,6 +37,17 @@ module.exports = {
     safelist: [
         {
             pattern: /icon-/,
-        }
+        },
+        'origin-bottom-right',
+        'rotate-[25deg]',
+        'md:grid-cols-2',
+        'md:text-base',
+        'md:text-6xl',
+        'md:px-12',
+        'scale-75',
+        'md:py-20',
+        'md:mt-8',
+        'py-10',
+        'my-6'
     ]
 };
