@@ -39,7 +39,7 @@ module.exports = {
             pattern: /icon-/,
         },
         'origin-bottom-right',
-        'rotate-[25deg]',
+        'rotate-[10deg]',
         'md:grid-cols-2',
         'md:text-base',
         'md:text-6xl',
@@ -48,6 +48,7 @@ module.exports = {
         'md:py-20',
         'md:mt-8',
         'md:mb-0',
+        'top-8',
         'py-10',
         'my-6',
     ]
