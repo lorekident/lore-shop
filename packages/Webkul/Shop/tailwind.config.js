@@ -47,7 +47,8 @@ module.exports = {
         'scale-75',
         'md:py-20',
         'md:mt-8',
+        'md:mb-0',
         'py-10',
-        'my-6'
+        'my-6',
     ]
 };
