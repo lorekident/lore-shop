@@ -19,7 +19,7 @@
                             <img
                                 src="{{ Storage::url($logo) }}"
                                 alt="{{ config('app.name') }}"
-                                style="height: 40px; width: 110px;"
+                                style="width: 60px;"
                             />
                         @else
                             <img
