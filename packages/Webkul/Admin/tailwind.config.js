@@ -25,9 +25,10 @@ module.exports = {
 
         extend: {
             colors: {
-                darkGreen: '#40994A',
                 darkBlue: '#0044F2',
                 darkPink: '#F85156',
+                darkGreen: '#40994A',
+                loreGreen: "#32B440",
             },
 
             fontFamily: {
@@ -36,7 +37,7 @@ module.exports = {
             }
         },
     },
-    
+
     darkMode: 'class',
 
     plugins: [],
