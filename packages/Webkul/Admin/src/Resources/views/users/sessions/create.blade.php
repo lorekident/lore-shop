@@ -9,6 +9,7 @@
             <!-- Logo -->
             @if ($logo = core()->getConfigData('general.design.admin_logo.logo_image'))
                 <img
+                    class="w-20 border-2 border-loreGreen rounded-full"
                     src="{{ Storage::url($logo) }}"
                     alt="{{ config('app.name') }}"
                 />
