@@ -174,7 +174,7 @@
                                     :src=`{{ Storage::url('') }}${record.base_image}`
                                 />
 
-                                <span class="absolute bottom-px rounded-full bg-darkPink px-1.5 text-xs font-bold leading-normal text-white ltr:left-px rtl:right-px">
+                                <span class="absolute bottom-px rounded-full bg-loreGreen px-1.5 text-xs font-bold leading-normal text-white ltr:left-px rtl:right-px">
                                     @{{ record.images_count }}
                                 </span>
                             </template>
